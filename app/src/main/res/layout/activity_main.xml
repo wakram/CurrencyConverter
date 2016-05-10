@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/test"
+        android:background="#006064"
+        android:layout_height="189dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minHeight="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:padding="5dp">
+                <LinearLayout
+                    android:orientation="vertical"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView1"
+                            android:src="@drawable/bd"
+                            android:tag="bd"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none">
+
+                            <TextView
+                                android:id="@+id/inputFirldID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:layout_gravity="right"
+                                android:freezesText="true"
+                                android:textColor="@android:color/white"
+                                android:textSize="47sp"
+                                android:singleLine="false"
+                                android:text="0"/>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/replaceID"
+                        android:background="#006064"
+                        android:scaleType="centerInside"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_repeat_white_24dp"
+                        android:padding="10dp"
+                        android:onClick="onClickListener"/>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView2"
+                            android:src="@drawable/usa"/>
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none">
+
+                            <TextView
+                                android:id="@+id/resultFieldId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:layout_gravity="right"
+                                android:freezesText="true"
+                                android:textColor="@android:color/white"
+                                android:textSize="47sp"
+                                android:singleLine="false"
+                                android:text="0"/>
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="8">-->
+
+                <!--<LinearLayout-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                   <!-- -->
+
+                <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="40"
+        android:id="@+id/viewPage"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/oneButton"
+                android:text="@string/one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="34sp"
+                android:background="#263238"
+                android:onClick="onClickListener"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/twoButton"
+                android:text="@string/two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:background="#263238"
+                android:textSize="34sp"
+                android:textColor="#FFFFFF"
+                />
+            <Button
+                android:id="@+id/threeButton"
+                android:text="@string/three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:background="#263238"
+                android:textSize="34sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/fourButton"
+                android:text="@string/foure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:background="#263238"
+                android:textSize="34sp"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/fiveButton"
+                android:text="@string/five"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:background="#263238"
+                android:textSize="34sp"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/sixButton"
+                android:text="@string/six"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#263238"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:textSize="34sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/sevenButton"
+                android:text="@string/seven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:textSize="34sp"
+                android:background="#263238"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/eightButton"
+                android:text="@string/eight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:textSize="34sp"
+                android:background="#263238"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/nineButton"
+                android:text="@string/nine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:textSize="34sp"
+                android:background="#263238"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/dotButton"
+                android:text="@string/dot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:textSize="34sp"
+                android:background="#263238"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:id="@+id/zeroButton"
+                android:text="@string/zero"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickListener"
+                android:textSize="34sp"
+                android:background="#263238"
+                android:textColor="#FFFFFF"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:src="@drawable/ic_backspace_white_24dp"
+                android:id="@+id/delButton"
+                android:background="#263238"
+                android:scaleType="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
